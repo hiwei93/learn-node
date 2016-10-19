@@ -1,0 +1,346 @@
+/*全局格式*/
+header
+{
+	background: rgba(0, 0, 0, 0.4);
+}
+
+h2
+{
+	margin-top: 0px;
+	font-size: 30px;
+}
+
+h3
+{
+	margin-top: 0px;
+	font-size: 24px;
+}
+
+p
+{
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+
+ul
+{
+	margin: 0px;
+}
+/*清除浮动*/
+.clearfix:after
+{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/*最大容器 main-wrapper*/
+.main-wrapper
+{
+	background: #444 url(../img/banner.jpg);
+	background-attachment: fixed;/*固定背景*/
+	background-repeat: no-repeat;/*背景是否重复*/
+	background-size: cover;/*背景不覆盖方式*/
+	background-position: center center;/*设置背景居中*/
+}
+
+/* 页头 */
+nav 
+{
+	height: 50px;
+	/*background: #ccc;*/
+	background: transparent;/*背景色透明*/
+}
+
+#banner
+{
+	height: 650px;
+	/*background: #777;*/
+	background: transparent;/*背景色透明*/
+}
+
+nav ul
+{
+	list-style: none;
+	margin: 0;
+	float: right;
+}
+
+nav ul li, nav .logo
+{
+	display: inline-block;
+	line-height: 50px;
+	margin-right: 20px;
+}
+
+nav ul li a, nav .logo a
+{
+	line-height: inherit;
+	text-decoration: none;
+	display: inline-block;
+	height: inherit;
+	color: #fff;
+}
+
+nav .logo
+{
+	/*float: left;*/
+	padding-left: 10px;
+}
+
+#banner .inner
+{
+	max-width: 370px;
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	top: 160px;
+	color: #fff;
+}
+
+#banner .inner h1
+{
+	margin: 0;
+
+}
+
+button
+{
+	border: none;
+	background: #333;
+	color: #eee;
+	padding: 10px;
+}
+
+#banner button
+{
+	padding: 14px 30px;
+}
+
+#banner .inner .more
+{
+	margin-top: 160px;
+}
+
+.sub-heading
+{
+	line-height: 30px;
+	margin: 30px 0;
+}
+
+.logo
+{
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 1px;	
+}
+
+.logo a
+{
+	color: #fff;
+}
+
+/* 内容 第一部分 green-section*/
+.wrapper
+{
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.hr
+{
+	width: 100%;
+	height: 2px;
+	margin: 20px auto;
+}
+
+.wrapper .sub-heading
+{
+	font-size: 18px;
+}
+
+.green-section
+{
+	background: #089DB0;
+	color: #fff;
+	text-align: center;
+	padding: 100px 0;
+}
+
+.green-section .hr
+{
+	background: #078494;
+	width: 60%;
+}
+
+.green-section .icon-group
+{
+	margin-top: 60px;
+}
+
+.green-section .icon-group .icon
+{
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	background: #0D6F7C;
+	transform: rotate(45deg);
+	margin: 20px;
+}
+
+/* 内容 第二部分 gray-section*/
+.gray-section
+{
+	background: #252F34;
+	color: #fff;
+}
+
+.gray-section .img-section
+{
+	width: 45%;
+	height:406px;
+}
+
+.img-section img
+{
+	width: 100%;
+	height: 100%
+}
+
+.gray-section .text-section
+{
+	width: 51.2%;
+}
+
+.artical-priview > div
+{
+	float: left;
+	font-size: 0;
+}
+
+.artical-priview:nth-child(odd)
+{
+	background: rgba(255, 255, 255, 0.05);
+}
+
+.artical-priview:after
+{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.text-section
+{
+	/*position: relative;
+	top: 68px;
+	left: 50px;*/
+	padding-top: 68px;
+	padding-left: 50px;
+}
+
+.text
+{
+	max-width: 95%;
+}
+
+.text-section h2
+{
+	margin-bottom: 20px;
+	/*font-size: 24px;*/
+}
+
+.text-section .sub-heading
+{
+	font-size: 20px;
+	margin-top: 0;
+}
+
+/*内容第三部分 purple-section*/
+.purple-section
+{
+	padding: 80px;
+	background: #3F3965;
+	color: #fff;
+}
+
+.purple-section .heading-wrapper
+{
+	text-align: center;
+}
+
+.purple-section .hr
+{
+	background: #373259;
+	width: 60%
+}
+
+.card
+{
+	float: left;
+	width: 50%;
+	min-height: 300px;
+	padding: 50px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	/*border: 1px solid white;*/
+}
+
+.card:first-child
+{
+	background: rgba(0, 0, 0, 0.04);
+}
+
+.card:nth-child(2)
+{
+	background: rgba(0, 0, 0, 0.08);
+}
+
+.card:nth-child(3)
+{
+	background: rgba(0, 0, 0, 0.12);
+}
+
+.card:nth-child(4)
+{
+	background: rgba(0, 0, 0, 0.16);
+}
+
+.card:nth-child(5)
+{
+	background: rgba(0, 0, 0, 0.20);
+}
+
+.card:nth-child(6)
+{
+	background: rgba(0, 0, 0, 0.24);
+}
+
+/*页脚*/
+footer
+{
+	background: #333;
+	color: #fff;
+	min-height: 180px;
+	text-align: center;
+}
+
+ul.share-group
+{
+	display: block;
+	width: 1080px;
+	margin: 0 auto;
+	padding: 50px;
+}
+
+.share-group li
+{
+	display: inline-block;
+	padding: 10px;
+}
+
+.copy
+{
+	/*padding-bottom: 10px;*/
+}
