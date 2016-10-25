@@ -32,7 +32,7 @@ var greet = require('./hello');
 ``` javascript
 var fs = require('fs');
 ```
-异步方法：
+**异步方法：**
 1.读取文本文件
 ``` javascript
 fs.readFile(fileName, code, function (err, data) {
@@ -43,10 +43,11 @@ fs.readFile(fileName, code, function (err, data) {
     }
 });
 ```
---fileName: 读取的文件路径和文件名；
---code: 文件编码方式；
--- function: 回调函数，第一个参数`err`代表错误信息，第二个参数`data`代表结果
-2.读取二进制文件（如图片）
+- fileName: 读取的文件路径和文件名；
+- code: 文件编码方式；
+- function: 回调函数，第一个参数`err`代表错误信息，第二个参数`data`代表结果
+
+>2.读取二进制文件（如图片）
 ``` javascript
 fs.readFile(fileName, function (err, data) {
     if (err) {
@@ -57,7 +58,7 @@ fs.readFile(fileName, function (err, data) {
     }
 });
 ```
---回调函数的`data`参数将返回一个`Buffer`对象;
+- 回调函数的`data`参数将返回一个`Buffer`对象;
 ``` javascript
 // Buffer -> String
 data.toString('utf-8');
@@ -65,7 +66,7 @@ data.toString('utf-8');
 new Buffer(text, 'utf-8');
 ```
 
->同步方法
+>**同步方法：**
 ``` javascript
 try {
     var data = fs.readFileSync(fileName, code);
@@ -75,13 +76,15 @@ try {
 }
 ```
 
+
+
 #### 2.写文件
 
 >引入`fs`模块
 ``` javascript
 var fs = require('fs');
 ```
-异步方法：
+**异步方法：**
 写文本文件
 ``` javascript
 fs.writeFile(fileName, data, function (err) {
@@ -92,8 +95,9 @@ fs.writeFile(fileName, data, function (err) {
     }
 });
 ```
---data: 写入的数据；
-异步方法：
+- data: 写入的数据。
+
+>**同步方法：**
 ``` javascript
 try {
     var data = 'test Sync!'
@@ -110,7 +114,7 @@ try {
 ``` javascript
 var fs = require('fs');
 ```
-异步方法：
+**异步方法：**
 ``` javascript
 fs.stat(fileName, function (err, stat) {
     if (err) {
@@ -123,7 +127,7 @@ fs.stat(fileName, function (err, stat) {
         }
 });
 ```
-同步方法：
+**同步方法：**
 ``` javascript
 try {
     var stat = fs.statSync(fileName);
@@ -163,4 +167,4 @@ console.log('Server is running at http://127.0.0.1:8080/');
 
 ### 5.加密算法模块儿`cryto`
 
-crypto模块提供通用的加密和哈希算法。
+>crypto模块提供通用的加密和哈希算法。
